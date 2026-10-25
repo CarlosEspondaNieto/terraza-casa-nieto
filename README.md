@@ -1,25 +1,23 @@
-# Terraza Casa Nieto — preparación del panel
+# Terraza Casa Nieto — sitio web
 
-Esta versión CONSERVA la apariencia del sitio original y separa los 34 productos en `data/menu.json`.
+Sitio web estático listo para Cloudflare Pages.
 
-## Qué funciona
-- Menú público con los precios y categorías originales.
-- Lectura de los datos desde `data/menu.json`.
-- Archivos iniciales de Decap CMS en `/admin/`.
+## Archivos
+- `index.html`: estructura de la página.
+- `styles.css`: colores y diseño adaptable al celular.
+- `menu.js`: los 34 productos, precios y filtros por categoría.
 
-## Qué NO funciona todavía
-- **No está habilitado el inicio de sesión en /admin/**.
-- **No está habilitado guardar cambios desde Decap CMS**.
-- Los eventos de `data/eventos.json` aún no aparecen en la web pública.
-- No hay panel de subida de fotografías operativo.
+## Publicación en Cloudflare Pages
+1. Subir estos archivos a la **raíz** del repositorio `terraza-casa-nieto` en GitHub.
+2. En Cloudflare, crear un proyecto **Pages** conectado al repositorio (no Workers).
+3. Framework preset: **None**. Build command: vacío. Build output directory: `/` (raíz).
+4. Publicar y probar la URL temporal `.pages.dev`.
+5. En Pages > Custom domains, agregar `terrazacasanieto.com` y seguir las indicaciones de Cloudflare.
 
-## Seguridad
-Para usar Decap con GitHub hay que configurar un servicio OAuth con secreto privado en el servidor.
-Nunca coloques Client Secret, PAT ni contraseñas en `index.html`, `menu.js`, `config.yml` o GitHub público.
-No registres la aplicación OAuth antes de definir la URL de callback del servicio.
+## Actualización de precios
+En GitHub, abrir `menu.js`, pulsar el lápiz, modificar `price: 40` por el nuevo precio y hacer **Commit changes**. Pages republicará los cambios automáticamente cuando esté conectado a GitHub.
 
-## Subir a GitHub
-Descomprime el ZIP y sube los archivos y carpetas a la raíz del repositorio.
-Reemplaza los archivos existentes `index.html`, `styles.css`, `menu.js` y `README.md` cuando GitHub lo solicite.
-Espera a que Cloudflare Pages despliegue y verifica el menú público.
-El panel `/admin/` no debe considerarse seguro/operativo hasta completar OAuth y permisos.
+## Antes de difusión pública
+- Verificar productos y precios con la carta vigente.
+- Verificar que el enlace de Google Maps llegue al negocio correcto.
+- Añadir fotos reales y calendario de eventos cuando estén disponibles.
