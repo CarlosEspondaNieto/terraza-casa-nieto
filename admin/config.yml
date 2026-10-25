@@ -1,0 +1,26 @@
+# Configuración de prueba. La autenticación GitHub requiere un broker OAuth seguro.
+backend:
+  name: github
+  repo: CarlosEspondaNieto/terraza-casa-nieto
+  branch: desarrollo-admin
+  # base_url: https://SERVIDOR-OAUTH-VERIFICADO
+  # auth_endpoint: auth
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "contenido"
+    label: "Contenido"
+    files:
+      - name: "eventos"
+        label: "Eventos (preparación)"
+        file: "admin/eventos.json"
+        fields:
+          - label: "Eventos"
+            name: "events"
+            widget: "list"
+            fields:
+              - { label: "Nombre", name: "title", widget: "string" }
+              - { label: "Fecha", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+              - { label: "Descripción", name: "description", widget: "text", required: false }
