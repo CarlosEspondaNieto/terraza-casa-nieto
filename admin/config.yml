@@ -2,7 +2,7 @@
 backend:
   name: github
   repo: CarlosEspondaNieto/terraza-casa-nieto
-  branch: desarrollo-admin
+  branch: main
   base_url: https://terraza-casa-nieto-auth.carloz-esponda.workers.dev
   auth_endpoint: auth
 
