@@ -24,3 +24,34 @@ collections:
               - { label: "Nombre", name: "title", widget: "string" }
               - { label: "Fecha", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
               - { label: "Descripción", name: "description", widget: "text", required: false }
+  - name: "menu"
+    label: "Menú de Terraza"
+    files:
+      - name: "productos"
+        label: "Productos y precios"
+        file: "data/menu.json"
+        fields:
+          - label: "Productos"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.name}} — ${{fields.price}}"
+            fields:
+              - label: "Categoría"
+                name: "cat"
+                widget: "select"
+                options:
+                  - "Bebidas"
+                  - "Cocteles y tragos"
+                  - "Snacks"
+              - label: "Nombre del producto"
+                name: "name"
+                widget: "string"
+              - label: "Descripción"
+                name: "desc"
+                widget: "text"
+                required: false
+              - label: "Precio en MXN"
+                name: "price"
+                widget: "number"
+                value_type: "float"
+                min: 0
