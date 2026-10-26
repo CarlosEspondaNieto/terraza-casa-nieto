@@ -3,8 +3,8 @@ backend:
   name: github
   repo: CarlosEspondaNieto/terraza-casa-nieto
   branch: desarrollo-admin
-  # base_url: https://SERVIDOR-OAUTH-VERIFICADO
-  # auth_endpoint: auth
+  base_url: https://terraza-casa-nieto-auth.carloz-esponda.workers.dev
+  auth_endpoint: auth
 
 media_folder: "images"
 public_folder: "/images"
