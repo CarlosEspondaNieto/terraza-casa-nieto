@@ -44,4 +44,26 @@ function show(category='Todos'){
  const visible=category==='Todos'?categories.slice(1):[category];
  list.innerHTML=visible.map(c=>`<section><h3 class="category-title">${safe(c)}</h3>${menu.filter(x=>x.cat===c).map(x=>`<div class="menu-row"><div><div class="item-name">${safe(x.name)}</div>${x.desc?`<div class="item-desc">${safe(x.desc)}</div>`:''}</div><div class="price">$${x.price.toFixed(2)} MXN</div></div>`).join('')}</section>`).join('');
 }
+// Mostrar inmediatamente el menú original como respaldo.
 show();
+
+// Intentar cargar los productos editados desde Decap CMS.
+fetch('./data/menu.json', { cache: 'no-store' })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('No se pudo cargar menu.json');
+    }
+    return response.json();
+  })
+  .then(data => {
+    if (!Array.isArray(data.products)) {
+      throw new Error('Formato de productos incorrecto');
+    }
+
+    // Actualizar el menú sin cambiar su diseño.
+    menu.splice(0, menu.length, ...data.products);
+    show();
+  })
+  .catch(error => {
+    console.warn('Se mantiene el menú de respaldo:', error);
+  });

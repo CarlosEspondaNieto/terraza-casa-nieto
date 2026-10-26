@@ -1,0 +1,57 @@
+# Configuración de prueba. La autenticación GitHub requiere un broker OAuth seguro.
+backend:
+  name: github
+  repo: CarlosEspondaNieto/terraza-casa-nieto
+  branch: main
+  base_url: https://terraza-casa-nieto-auth.carloz-esponda.workers.dev
+  auth_endpoint: auth
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "contenido"
+    label: "Contenido"
+    files:
+      - name: "eventos"
+        label: "Eventos (preparación)"
+        file: "admin/eventos.json"
+        fields:
+          - label: "Eventos"
+            name: "events"
+            widget: "list"
+            fields:
+              - { label: "Nombre", name: "title", widget: "string" }
+              - { label: "Fecha", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+              - { label: "Descripción", name: "description", widget: "text", required: false }
+  - name: "menu"
+    label: "Menú de Terraza"
+    files:
+      - name: "productos"
+        label: "Productos y precios"
+        file: "data/menu.json"
+        fields:
+          - label: "Productos"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.name}} — ${{fields.price}}"
+            fields:
+              - label: "Categoría"
+                name: "cat"
+                widget: "select"
+                options:
+                  - "Bebidas"
+                  - "Cocteles y tragos"
+                  - "Snacks"
+              - label: "Nombre del producto"
+                name: "name"
+                widget: "string"
+              - label: "Descripción"
+                name: "desc"
+                widget: "text"
+                required: false
+              - label: "Precio en MXN"
+                name: "price"
+                widget: "number"
+                value_type: "float"
+                min: 0
