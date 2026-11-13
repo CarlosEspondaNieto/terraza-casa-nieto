@@ -177,6 +177,11 @@
       "name": "Lasagna",
       "price": 200,
       "desc": "incluye ensalada y pan"
+    },
+    {
+      "cat": "Vinos",
+      "name": "ISLA NEGRA CABERNET SAUVIGNON 750ML",
+      "price": 200
     }
   ]
 }
