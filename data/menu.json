@@ -189,6 +189,12 @@
       "name": "TARAPACA RESERVA CARMENERE 750 ML",
       "desc": "Precio por botella",
       "price": 320
+    },
+    {
+      "cat": "Vinos",
+      "name": "RESERVADO CONCHA Y TORO CABERNET SAUV 750 ML",
+      "desc": "Precio por botella",
+      "price": 250
     }
   ]
 }
