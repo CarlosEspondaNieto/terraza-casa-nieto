@@ -195,6 +195,12 @@
       "name": "RESERVADO CONCHA Y TORO CABERNET SAUV 750 ML",
       "desc": "Precio por botella",
       "price": 250
+    },
+    {
+      "cat": "Vinos",
+      "name": "CUATRO SOLES SEMIDULCE AFRUTADO 750 ML",
+      "desc": "Precio por botella",
+      "price": 200
     }
   ]
 }
