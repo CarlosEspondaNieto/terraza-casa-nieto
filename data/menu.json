@@ -219,6 +219,12 @@
       "name": "CUATRO SOLES AFRUTADO 750 ML",
       "desc": "Precio por botella",
       "price": 200
+    },
+    {
+      "name": "Pasta a la bolognesa",
+      "price": 200,
+      "desc": "Incluye pan y ensalada",
+      "cat": "Snacks"
     }
   ]
 }
