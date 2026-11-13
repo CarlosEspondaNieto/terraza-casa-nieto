@@ -180,8 +180,9 @@
     },
     {
       "cat": "Vinos",
-      "name": "ISLA NEGRA CABERNET SAUVIGNON 750ML",
-      "price": 200
+      "name": "ISLA NEGRA CABERNET SAUVIGNON 750 ML",
+      "price": 200,
+      "desc": "Precio por botella"
     }
   ]
 }
