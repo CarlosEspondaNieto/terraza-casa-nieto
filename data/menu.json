@@ -213,6 +213,12 @@
       "name": "RESERVADO CONCHA Y TORO DULCE TINTO 750ML",
       "desc": "Precio por botella",
       "price": 250
+    },
+    {
+      "cat": "Vinos",
+      "name": "CUATRO SOLES AFRUTADO 750 ML",
+      "desc": "Precio por botella",
+      "price": 200
     }
   ]
 }
