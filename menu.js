@@ -35,7 +35,7 @@ const menu = [
  {cat:'Snacks',name:'Nuggets',price:60},
  {cat:'Snacks',name:'Alitas (5 pz)',desc:'BBQ, Mango Abanero, Tamarindo, Búfalo',price:85}
 ];
-const categories=['Todos','Bebidas','Cocteles y tragos','Snacks'];
+const categories = ['Todos', 'Bebidas', 'Cocteles y tragos', 'Vinos', 'Snacks'];
 const tabs=document.querySelector('#tabs'),list=document.querySelector('#menu-list');
 const safe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function show(category='Todos'){
