@@ -171,6 +171,12 @@
       "name": "Alitas (5 pz)",
       "desc": "BBQ, Mango Abanero, Tamarindo, Búfalo",
       "price": 85
+    },
+    {
+      "cat": "Snacks",
+      "name": "Lasagna",
+      "price": 200,
+      "desc": "incluye ensalada y pan"
     }
   ]
 }
