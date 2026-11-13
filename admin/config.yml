@@ -42,6 +42,7 @@ collections:
                 options:
                   - "Bebidas"
                   - "Cocteles y tragos"
+		  - "Vinos"
                   - "Snacks"
               - label: "Nombre del producto"
                 name: "name"
