@@ -207,6 +207,12 @@
       "name": "LA REDONDA TTO 750ML",
       "desc": "Precio por botella",
       "price": 200
+    },
+    {
+      "cat": "Vinos",
+      "name": "RESERVADO CONCHA Y TORO DULCE TINTO 750ML",
+      "desc": "Precio por botella",
+      "price": 250
     }
   ]
 }
