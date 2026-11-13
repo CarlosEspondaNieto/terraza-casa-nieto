@@ -201,6 +201,12 @@
       "name": "CUATRO SOLES SEMIDULCE AFRUTADO 750 ML",
       "desc": "Precio por botella",
       "price": 200
+    },
+    {
+      "cat": "Vinos",
+      "name": "LA REDONDA TTO 750ML",
+      "desc": "Precio por botella",
+      "price": 200
     }
   ]
 }
