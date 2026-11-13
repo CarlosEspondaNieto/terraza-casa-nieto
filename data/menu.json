@@ -183,6 +183,12 @@
       "name": "ISLA NEGRA CABERNET SAUVIGNON 750 ML",
       "price": 200,
       "desc": "Precio por botella"
+    },
+    {
+      "cat": "Vinos",
+      "name": "TARAPACA RESERVA CARMENERE 750 ML",
+      "desc": "Precio por botella",
+      "price": 320
     }
   ]
 }
