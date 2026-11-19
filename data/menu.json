@@ -23,7 +23,8 @@
     {
       "cat": "Bebidas",
       "name": "Coca-cola",
-      "price": 20
+      "price": 20,
+      "image": "/images/coca355ml.jpg"
     },
     {
       "cat": "Bebidas",
