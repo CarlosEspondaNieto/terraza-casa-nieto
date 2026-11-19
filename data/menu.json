@@ -34,7 +34,8 @@
     {
       "cat": "Bebidas",
       "name": "Cerveza Modelo",
-      "price": 30
+      "price": 30,
+      "image": "/images/modelo355ml.jpg"
     },
     {
       "cat": "Bebidas",
