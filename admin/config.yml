@@ -47,6 +47,10 @@ collections:
               - label: "Nombre del producto"
                 name: "name"
                 widget: "string"
+              - label: "Foto del producto"
+                name: "image"
+                widget: "image"
+                required: false
               - label: "Descripción"
                 name: "desc"
                 widget: "text"

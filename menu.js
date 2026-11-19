@@ -42,8 +42,35 @@ function show(category='Todos'){
  tabs.replaceChildren();
  for(const c of categories){const b=document.createElement('button');b.type='button';b.className='tab'+(c===category?' active':'');b.textContent=c;b.setAttribute('aria-pressed',c===category);b.onclick=()=>show(c);tabs.appendChild(b)}
  const visible=category==='Todos'?categories.slice(1):[category];
- list.innerHTML=visible.map(c=>`<section><h3 class="category-title">${safe(c)}</h3>${menu.filter(x=>x.cat===c).map(x=>`<div class="menu-row"><div><div class="item-name">${safe(x.name)}</div>${x.desc?`<div class="item-desc">${safe(x.desc)}</div>`:''}</div><div class="price">$${x.price.toFixed(2)} MXN</div></div>`).join('')}</section>`).join('');
-}
+list.innerHTML = visible.map(c => `
+  <section>
+    <h3 class="category-title">${safe(c)}</h3>
+    ${menu.filter(product => product.cat === c).map(product => `
+      <div class="menu-row">
+        <div class="item-content">
+          ${product.image ? `
+            <img
+              class="item-image"
+              src="${safe(product.image)}"
+              alt="${safe(product.name)}"
+              width="80"
+              height="80"
+              loading="lazy"
+              decoding="async"
+            >
+          ` : ''}
+          <div class="item-details">
+            <div class="item-name">${safe(product.name)}</div>
+            ${product.desc ? `
+              <div class="item-desc">${safe(product.desc)}</div>
+            ` : ''}
+          </div>
+        </div>
+        <div class="price">$${product.price.toFixed(2)} MXN</div>
+      </div>
+    `).join('')}
+  </section>
+`).join('');}
 // Mostrar inmediatamente el menú original como respaldo.
 show();
 
