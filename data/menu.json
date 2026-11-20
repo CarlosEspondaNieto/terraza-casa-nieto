@@ -227,6 +227,13 @@
       "price": 200,
       "desc": "Incluye pan y ensalada",
       "cat": "Snacks"
+    },
+    {
+      "cat": "Vinos",
+      "name": "VINO LONG CHAMPS",
+      "desc": "Vino tinto",
+      "price": 250,
+      "image": "/images/longchanmpsvino.jpg"
     }
   ]
 }
