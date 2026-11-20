@@ -230,8 +230,8 @@
     },
     {
       "cat": "Vinos",
-      "name": "VINO LONG CHAMPS",
-      "desc": "Vino tinto",
+      "name": "LONGCHAMPS",
+      "desc": "Precio por botella\nVino francés",
       "price": 250,
       "image": "/images/longchanmpsvino.jpg"
     }
