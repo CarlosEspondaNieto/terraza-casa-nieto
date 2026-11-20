@@ -234,6 +234,13 @@
       "desc": "Precio por botella\nVino francés",
       "price": 250,
       "image": "/images/longchanmpsvino.jpg"
+    },
+    {
+      "cat": "Vinos",
+      "name": "MONTEBELLO",
+      "desc": "Precio por botella\nVino tinto de Chile",
+      "image": "/images/montebellovinotinto.jpg",
+      "price": 200
     }
   ]
 }
